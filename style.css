@@ -5,6 +5,8 @@
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
     background-color: black;
     font-family: 'Outfit', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -12,12 +14,9 @@ body{
     
 }
 
-main{
-    color: white;
-}
 
 .head{
-    width: 100%;
+    width: 100vw;
     height: 48px;
     display: grid;
     grid-template-columns: 46.59px 43.47px auto 45px 45px 48px 48px;
@@ -87,7 +86,37 @@ main{
     align-self: center;
 }
 
+@media screen and (max-device-width:320px) {
+    
+    .Google_Logo img{
+        width: 80vw;
+        height: 30vw;
+        justify-self: center;
+        align-self: center;
+
+    }
+
+    input{
+        width: 50vw;
+        height:10vw;
+        justify-self: center;
+        align-self: center;
+    }
+
+    footer{
+        width: 80vw;
+    }
+
+    .Search_button{
+        width: 20vw;
+        justify-self: center;
+        align-self: center;
+    }
+
+}
+
 .Search-container{
+    width: 100vw;
     display: grid;
     grid-template-columns: 584px;
     grid-template-rows: 46px;
@@ -96,6 +125,7 @@ main{
 
 .Search_button{
     margin: 10px;
+    width: 100vw;
     display: grid;
     grid-template-columns: 127px;
     grid-template-rows: 26px;
@@ -109,6 +139,8 @@ main{
 }
 
 footer{
+    width: 100vw;
+    height: 48px;
     display: grid;
     grid-template-columns: 100px 87px 147px auto 76px 69px 81px;
     grid-template-rows: 48px;
